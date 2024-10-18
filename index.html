@@ -35,6 +35,23 @@
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
             >
+			<a-assets>
+                <a-asset-item
+                    id="dino"
+                    src="assets/plateosaurus_skeleton.glb"
+                ></a-asset-item>
+            </a-assets>
+
+            <a-marker
+                id="dino"
+                type="pattern"
+                preset="custom"
+                url="assets/pattern-dino.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
                 <a-entity
                     id="bowser-model"
                     scale="0.003471344729718634 0.003471344729718634 0.003471344729718634"
